@@ -53,4 +53,15 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  resources :students, except: :destroy
+  resources :school_classes, except: :destroy
+
+  #get 'students', to: 'students#index', as: :students
+  #get 'students/:id', to: 'students#show', as: :student
+  #get 'students/new', to: 'students#new', as: :
+  #get 'students/:id/edit', to: 'students#edit', as: :
+  #patch 'students/:id', to: 'students#update', as: :
+  #post 'students', to: 'students#create', as: :
+  #delete 'students/:id', to: 'students#destroy', as: :
 end
